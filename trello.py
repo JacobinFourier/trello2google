@@ -3,9 +3,9 @@
 
 __author__ = 'matteomadeddu'
 
-# TODO Implement the automatic retrieve of the Trello board code
+#TODO Implement the automatic retrieve of the Trello board code
 
-import urllib2
+import urllib.request as urllib2
 import json
 import config
 
@@ -119,6 +119,6 @@ class Trello(object):
                         if value.has_key('idChecklists'):
                             value['checkList'] = self.get_checklist_item(value['idChecklists'])
                         cards_dict[name] = value
-                        print value
+                        print(value)
         return cards_dict
 

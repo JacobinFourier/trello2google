@@ -44,9 +44,9 @@ def sync_trello(gInstance, tInstance):
 
 
 if __name__ == "__main__":
-    print "The following events have been added to the calendar: "
+    print("The following events have been added to the calendar: ")
     google_instance = gcal.Google()
     trello_instance = trello.Trello()
 
     sync_trello(google_instance, trello_instance)
-    print "Process completed."
+    print("Process completed.")

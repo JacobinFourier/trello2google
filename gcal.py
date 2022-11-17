@@ -97,9 +97,9 @@ class Google(object):
         :return:
         """
         feed = calendar_service.GetOwnCalendarsFeed()
-        print feed.title.text
+        print(feed.title.text)
         for i, a_calendar in enumerate(feed.entry):
-            print '\t%s. %s' % (i, a_calendar.title.text,)
+            print('\t%s. %s' % (i, a_calendar.title.text,))
 
     def insert_single_event(self, title,
                             content='', where='',
